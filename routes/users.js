@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
-
+var tej=0
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  tej = tej +1;
+  res.send('user accesses are:'+ tej);
+
 });
 
 module.exports = router;
